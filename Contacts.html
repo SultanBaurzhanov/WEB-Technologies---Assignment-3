@@ -82,7 +82,7 @@
                         const emailInput = form.querySelector("#email");
                         const passwordInput = form.querySelector("#password");
             
-                        // Check if the email field is empty or not a valid email
+                        // Check if the email is empty or not a valid email
                         if (!isValidEmail(emailInput.value)) {
                             valid = false;
                             alert("Please enter a better email address or it's skill issue.");
@@ -90,7 +90,7 @@
                         }
                     });
             
-                    // Function to validate email using a simple regex pattern
+                    // func to validate email 
                     function isValidEmail(email) {
                         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
                         return emailPattern.test(email);
